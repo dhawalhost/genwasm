@@ -163,6 +163,11 @@ var templates = template.Must(template.ParseFiles("public/upload.html"))
 func Display(w http.ResponseWriter, page string, data interface{}) {
 	templates.ExecuteTemplate(w, page+".html", data)
 }
+func CheckRunStatus(c *gin.Context) {
+	c.JSON(200, gin.H{
+		"msg": "Pong",
+	})
+}
 
 // DownloadWasmFile -
 func DownloadWasmFile(c *gin.Context) {

@@ -17,4 +17,7 @@ func InitRoutes(g *gin.Engine) {
 	g.POST("/buildwasm", func(c *gin.Context) {
 		services.UploadFile(c)
 	})
+	g.GET("/ping", func(c *gin.Context) {
+		services.CheckRunStatus(c)
+	})
 }
