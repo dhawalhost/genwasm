@@ -1,4 +1,5 @@
 # genwasm
+![gen wasm](https://github.com/dhjawalhost/genwasm/resources/genwasm.jpg)
 Generate wasm file by giving an input as go file
 
 To run the wasm builder in docker for maintaining the go version. Enter the below command:
